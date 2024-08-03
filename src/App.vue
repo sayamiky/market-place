@@ -1,4 +1,22 @@
-<script setup>
+<template>
+  <div>
+    <home-page></home-page>
+    <web-footer></web-footer>
+  </div>
+</template>
+
+<script>
+import WebFooter from "./components/footer/WebFooter.vue";
+import HomePage from "./components/pages/HomePage.vue";
+export default {
+  components: {
+    HomePage,
+    WebFooter,
+  },
+};
+</script>
+
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
@@ -44,4 +62,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->
